@@ -1,4 +1,4 @@
-package my.rest.controller.api;
+package my.rest.controller.apiconfig;
 
 import java.util.HashMap;
 

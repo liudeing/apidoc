@@ -5,6 +5,7 @@ import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.ApplicationContext;
 
 /**
  * Created by Ldp on 2017/6/13.
@@ -18,6 +19,12 @@ public class Application extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        ApplicationContext context = SpringApplication.run(Application.class, args);
+        String[] envProfile = context.getEnvironment().getActiveProfiles();
+
+        for (String env : envProfile) {
+            System.out.println("current profile is= " + env);
+        }
+
     }
 }
