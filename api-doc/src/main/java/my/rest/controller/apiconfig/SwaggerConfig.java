@@ -43,7 +43,7 @@ public class SwaggerConfig {
                 .apiInfo(
                         new ApiInfo(version._description() + " —— WebApi在线文档|测试工具",
                                 version._description(), null,
-                                null, null, null, null, null)
+                                null, null, null, null)
                 )
 
                 .enable(apidoc)

@@ -30,19 +30,17 @@ public final class ApiConfiguration {
     public static final HashMap<Version, String[]> apis = new HashMap<Version, String[]>() {
         {
             put(Version.v320, new String[]{
-                    "/user/login",
-                    "/product/catPriceInfo"
+                    "api/user/hello",
+                    "/api/version"
             });
 
             put(Version.v110, new String[]{
-                    "/user/login",
-                    "/product/catPriceInfo"
+                    "/api/version"
             });
 
             put(Version.base, new String[]{
-                            "/user/getUserInfo"
-                    }
-            );
+                    "/api/version"
+            });
         }
     };
 

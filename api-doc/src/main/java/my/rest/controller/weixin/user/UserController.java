@@ -1,14 +1,14 @@
 package my.rest.controller.weixin.user;
 
 import io.swagger.annotations.ApiOperation;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Ldp on 2017/6/13.
  */
-@Controller
+@RestController
 @RequestMapping("/api/user")
 public class UserController {
 

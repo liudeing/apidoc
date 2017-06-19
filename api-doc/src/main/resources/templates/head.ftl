@@ -7,8 +7,5 @@
 </head>
 <body>
 
-<#list students as student >
-${student.id} - ${student.name} - ${student.sex} - ${student.no} <br/>
-</#list>
 </body>
 </html>
