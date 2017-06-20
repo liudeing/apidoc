@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +18,8 @@ import java.util.Arrays;
  * Created by Ldp on 2017/6/13.
  */
 @ComponentScan(basePackages = "my.rest.controller.*")
-@EnableAutoConfiguration
+@Configuration
+@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 @SpringBootConfiguration
 public class Application extends SpringBootServletInitializer {
 

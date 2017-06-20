@@ -81,11 +81,6 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
-        <!--XML/XHTML/HTML5 Java template engine-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
-        <!--</dependency>-->
         <!--devtools-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
